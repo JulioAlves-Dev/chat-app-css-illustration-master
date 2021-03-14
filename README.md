@@ -18,8 +18,8 @@ Esta é uma solução para o desafio [Ilustração CSS do aplicativo de bate-pap
 
 Os usuários devem ser capazes de:
 
-- Visualize o layout ideal para o componente, dependendo do tamanho da tela do dispositivo
-- Veja a interface de chat animada no carregamento inicial (opcional)
+- Visualizar o layout ideal para o componente, dependendo do tamanho da tela do dispositivo
+- Ver a interface de chat animada no carregamento inicial (opcional)
 
 ### Screenshot
 
