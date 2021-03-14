@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Ilustração CSS do aplicativo de bate-papo</title>
+  </head>
+  <body>
+    <main>
+      <section class='section-chat'>
+        <div class='chat-smarthphone'>
+          <div class='header-smarthphone'>
+            <div class="opening-smarthphone"></div>
+            <div class="user-smarthphone">
+              <img class="arrow" src="./images/left-arrow.svg" alt="Seta para Esquerda">
+              <div class="avatar"><img src="./images/avatar.jpg" alt="Seta para Esquerda"></div>
+              <div class="info-perfil">
+                <span class="name">Samuel Green</span>
+                <span class="status">Available to Walk</span>
+              </div>
+              <img class="squares" src="./images/vertical-squares.svg" alt="Seta para Esquerda">
+            </div>
+          </div>
+          <div class="content-smarthphone">
+            <div class="chats-left">
+              <div class="box-chat-default box-left animation-chat-1">That sounds great. I’d be happy with that.</div>
+              <div class="box-chat-default box-left animation-chat-2">Could you send over some pictures of your dog, please?</div>
+            </div>
+            <div class="chats-right">
+              <div class='img-dogs animation-chat-3'>
+                <div class="box-chat-img-right">
+                  <img src="./images/dog-image-1.jpg" alt="imagem Cachorro 1">
+                </div>
+                <div class="box-chat-img-right">
+                  <img src="./images/dog-image-2.jpg" alt="Imagem Cachorro 2">
+                </div>
+                <div class="box-chat-img-right">
+                  <img src="./images/dog-image-3.jpg" alt="Imagem Cachorro 3">
+                </div>
+              </div>
+              <div class="box-chat-default box-right animation-chat-4">Here are a few pictures. She’s a happy girl!</div>
+              <div class="box-chat-default box-right animation-chat-5">Can you make it?</div>
+            </div>
+            <div class="chats-left">
+              <div class="box-chat-default box-left animation-chat-6">She looks so happy! The time we discussed works. How long shall I take her out for?</div>
+              <div class="box-chat-default box-colorful animation-chat-7">
+                <span>
+                  <input type="radio" id="test1" name="radio-group">
+                  <label for="test1">30 minute walk</label>
+                </span>
+                <strong>$29</strong>
+              </div>
+              <div class="box-chat-default box-colorful animation-chat-8">
+                <span>
+                  <input type="radio" id="test2" name="radio-group">
+                  <label for="test2">1 hour walk</label>
+                </span>
+                <strong>$49</strong>
+              </div>
+            </div>
+            <div class="chat-message animation-chat-9">
+              <input type="text" name="message" id="message" placeholder="Type a message...">
+              <button class="submit-button">
+                <img src="./images/right-arrow.svg" alt="Seta para direita">
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class='chat-background-gradient'></div>
+      </section>
+      <section class='section-text'>
+        <div class='title-and-text animation-text'>
+          <h1>Simple booking</h1>
+          <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+            discuss arrangements and make bookings. Once the walk has been completed you can rate 
+            your walker and book again all through the chat.</p>
+        </div>
+        <div class='chat-background-gray'></div>
+      </section>
+    </main>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
