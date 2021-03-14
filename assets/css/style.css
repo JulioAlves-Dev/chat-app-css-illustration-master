@@ -1,24 +1,20 @@
 :root {
   /* CORES PRIMARIA: */
   /* CORES DOS TEXTOS: */
-
   --var-violeta-palido: hsl(276, 100%, 81%);
   --var-violeta-moderada: hsl(276, 55%, 52%);
   --var-violeta-escuro: hsl(271, 15%, 43%);
   --var-azul-acidentado: hsl(206, 6%, 79%);
   --var-violeta-desaturada-escuro: hsl(271, 36%, 24%);
   --var-violeta-acinzentado-escuro: hsl(270, 7%, 64%);
-
   /* CORES DOS GRADIENTS: */
   --var-magneta-claro: hsl(293, 100%, 63%);
   --var-violeta-claro: hsl(264, 100%, 61%);
-
   /* CORES SECUNDARIAS: */
   --var-branco: hsl(0, 0%, 100%);
   --var-violeta-acinzentado: hsl(270, 20%, 96%);
   --var-violeta-dessaturada-escuro: hsl(271, 36%, 24%);
   --var-magenta-claro: hsl(289, 100%, 72%);
-
   --cubic: cubic-bezier(0.93, 0.85, 0.87, 1.34);
 }
 * {
@@ -31,10 +27,14 @@ button {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
 }
+body {
+  overflow-x: hidden;
+}
 main {
   display: flex;
   width: 100%;
   height: 100vh;
+  overflow-y: scroll;
 }
 .section-chat {
   width: 50vw;
@@ -46,10 +46,10 @@ main {
   height: 100%;
   display: flex;
   align-items: center;
+  position: relative;
 }
 .chat-smarthphone {
   width: 250px;
-  height: 510px;
   background: var(--var-violeta-acinzentado);
   border-radius: 30px;
   border: 10px solid var(--var-branco);
@@ -191,7 +191,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-width: 180px;
+  min-width: 200px;
   background-image: linear-gradient(
     to right,
     var(--var-magneta-claro),
@@ -215,7 +215,7 @@ main {
 [type="radio"]:not(:checked) + label {
   position: relative;
   padding-left: 20px;
-  padding-right: 40px;
+  padding-right: 20px;
   cursor: pointer;
   line-height: 15px;
   display: inline-block;
@@ -397,4 +397,41 @@ main {
 .animation-text {
   animation: animation-chat-3 1s forwards;
   animation-delay: 3s;
+}
+
+@media (max-width: 800px) {
+  main {
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  .section-chat {
+    width: 100vw;
+    min-height: 600px;
+  }
+  .section-text {
+    width: 100vw;
+  }
+  .chat-smarthphone {
+    position: initial;
+    margin: 30px auto 0px;
+  }
+  .chat-background-gradient {
+    left: -250px;
+  }
+  .section-text {
+    justify-content: center;
+  }
+  .title-and-text {
+    margin: 50px 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .chat-background-gradient {
+    left: -400px;
+  }
+  .chat-background-gray {
+    right: -400px;
+  }
 }
