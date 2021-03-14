@@ -26,15 +26,13 @@ body,
 button {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
-}
-body {
   overflow-x: hidden;
 }
+
 main {
   display: flex;
   width: 100%;
   height: 100vh;
-  overflow-y: scroll;
 }
 .section-chat {
   width: 50vw;

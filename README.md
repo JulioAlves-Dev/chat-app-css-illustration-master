@@ -1,6 +1,6 @@
 # Frontend Mentor - Ilustração CSS do aplicativo de bate-papo
 
-Esta é uma solução para o desafiio [Ilustração CSS do aplicativo de bate-papo no Frontend Mentor.](https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY) Os desafios do Frontend Mentor ajudam você a melhorar suas habilidades de codificação ao construir projetos realistas.
+Esta é uma solução para o desafio [Ilustração CSS do aplicativo de bate-papo no Frontend Mentor.](https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY) Os desafios do Frontend Mentor ajudam você a melhorar suas habilidades de codificação ao construir projetos realistas.
 
 ## Índice
 
